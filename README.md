@@ -22,8 +22,8 @@ This project is a web scraper for collecting recipes from the GialloZafferano we
 
    ```sh
 
-   git clone https://github.com/alelado01/recipes_scraping.git
-   cd recipes_scraping
+   git clone https://github.com/alelado01/recipes_scraper.git
+   cd recipes_scraper
 
    ```
 
