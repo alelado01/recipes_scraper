@@ -33,9 +33,13 @@ This project is a web scraper for collecting recipes from the GialloZafferano we
     
  Usage
 
-   Run the scraper:
+   Run the scraper (Windows):
 
     python giallozafferano_scraper.py
+
+   If you are in a MacOS or Linux environment:
+
+    python3 giallozafferano_scraper.py
 
    The scraped data will be saved in recipes_data_with_images.json and the images will be saved in the recipe_images directory.
 
