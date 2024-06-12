@@ -42,12 +42,12 @@ Usage
 
 
 ## Code Overview
-Recipe Class
 
-The Recipe class stores the details of each recipe:
+### Recipe Class
 
-python
+The `Recipe` class stores the details of each recipe:
 
+```python
 class Recipe:
     def __init__(self, title, description, ingredients, img_path, category, rating, difficulty, prep_time):
         self.title = title
@@ -58,13 +58,13 @@ class Recipe:
         self.rating = rating
         self.difficulty = difficulty
         self.prep_time = prep_time
+```
 
-
-Main Script
+### Main Script
 
 The main script orchestrates the scraping process:
 
-python
+```python
 
 if __name__ == "__main__":
     num_processes = 64
@@ -79,7 +79,7 @@ if __name__ == "__main__":
             logging.info("Data successfully loaded")
     except Exception as e:
         logging.error(f"Unexpected error while writing on the JSON: {e}")
-
+```
 
 ## Issues
 
