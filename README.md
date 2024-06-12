@@ -29,14 +29,12 @@ This project is a web scraper for collecting recipes from the GialloZafferano we
 
  Install the required packages:
 
-    sh
     pip install -r requirements.txt 
     
  Usage
 
    Run the scraper:
 
-    sh
     python scraper.py
 
    The scraped data will be saved in recipes_data_with_images.json and the images will be saved in the recipe_images directory.
