@@ -40,14 +40,8 @@ Usage
 
     The scraped data will be saved in recipes_data_with_images.json and the images will be saved in the recipe_images directory.
 
-Project Structure
 
-    scraper.py: Main script for scraping the recipes.
-    requirements.txt: List of required packages.
-    recipe_images/: Directory where the recipe images are saved.
-    recipes_data_with_images.json: JSON file containing the scraped recipe data.
-
-Code Overview
+## Code Overview
 Recipe Class
 
 The Recipe class stores the details of each recipe:
@@ -64,11 +58,6 @@ class Recipe:
         self.rating = rating
         self.difficulty = difficulty
         self.prep_time = prep_time
-
-Issues
-
-Some images are not available and the script won't download them
-There are some recipes which have no ingredients, the script will only print a warning without saving anything
 
 
 Main Script
@@ -91,6 +80,12 @@ if __name__ == "__main__":
     except Exception as e:
         logging.error(f"Unexpected error while writing on the JSON: {e}")
 
-Contributing
+
+## Issues
+
+Some images are not available and the script won't download them
+There are some recipes which have no ingredients, the script will only print a warning without saving anything
+
+## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
