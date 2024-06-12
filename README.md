@@ -1,33 +1,32 @@
-GialloZafferano Recipe Scraper
+# GialloZafferano Recipe Scraper
 
-This project is a web scraper for collecting recipe data from the GialloZafferano website. It extracts information such as title, description, ingredients, image, category, rating, difficulty, and preparation time for each recipe, and saves it in a JSON file. Additionally, it downloads and saves images of the recipes.
-Features
+This project is a web scraper for collecting recipes from the GialloZafferano website. It extracts information such as title, description, ingredients, image, category, rating, difficulty, and preparation time for each recipe, and saves it in a JSON file. Furthermore, it downloads and saves images of the recipes.
 
-    Scrapes recipe information from the GialloZafferano website.
-    Downloads and saves images of the recipes.
-    Cleans and formats the ingredients list.
-    Utilizes multiprocessing for faster scraping.
-    Saves the collected data in a JSON file.
+## Features
 
-Requirements
+- Scrapes recipe information from the GialloZafferano website.
+- Downloads and saves images of the recipes.
+- Formats the ingredients list.
+- Saves the collected data in a JSON file.
 
-    Python 3.x
-    BeautifulSoup4
-    Requests
-    Pillow
+## Requirements
 
-Installation
+- Python 3.x
+- BeautifulSoup4
+- Requests
+- Pillow
 
-    Clone this repository:
+## Installation
+
+1. Clone this repository:
+
+   ```sh
+   git clone https://github.com/yourusername/giallozafferano-recipe-scraper.git
+   cd giallozafferano-recipe-scraper
+
+    Install the required packages:
 
     sh
-
-git clone https://github.com/yourusername/giallozafferano-recipe-scraper.git
-cd giallozafferano-recipe-scraper
-
-Install the required packages:
-
-sh
 
     pip install -r requirements.txt
 
@@ -66,13 +65,11 @@ class Recipe:
         self.difficulty = difficulty
         self.prep_time = prep_time
 
-Functions
+Issues
 
-    clean_ingredients(ingredients): Cleans and formats the ingredients list.
-    save_image(image_url, recipe_title): Downloads and saves the recipe image.
-    scrape_giallozafferano(url): Scrapes recipes from a given URL.
-    get_total_pages(url): Retrieves the total number of pages containing recipes.
-    process_page(page_number): Processes a single page of recipes.
+Some images are not available and the script won't download them
+There are some recipes which have no ingredients, the script will only print a warning without saving anything
+
 
 Main Script
 
@@ -94,14 +91,6 @@ if __name__ == "__main__":
     except Exception as e:
         logging.error(f"Unexpected error while writing on the JSON: {e}")
 
-Logging
+Contributing
 
-Logging is configured to provide information about the scraping status:
-
-python
-
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-
-Error Handling
-
-The script includes error handling for network requests and image processing to ensure robustness.
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
