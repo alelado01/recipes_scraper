@@ -22,8 +22,8 @@ This project is a web scraper for collecting recipes from the GialloZafferano we
 
    ```sh
 
-   git clone https://github.com/yourusername/giallozafferano-recipe-scraper.git
-   cd giallozafferano-recipe-scraper
+   git clone https://github.com/alelado01/recipes_scraping.git
+   cd recipes_scraping
 
    ```
 
@@ -35,7 +35,7 @@ This project is a web scraper for collecting recipes from the GialloZafferano we
 
    Run the scraper:
 
-    python scraper.py
+    python giallozafferano_scraper.py
 
    The scraped data will be saved in recipes_data_with_images.json and the images will be saved in the recipe_images directory.
 
