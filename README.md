@@ -18,7 +18,7 @@ This project is a web scraper for collecting recipes from the GialloZafferano we
 
 ## Installation
 
-1. Clone this repository:
+ Clone this repository:
 
    ```sh
    git clone https://github.com/yourusername/giallozafferano-recipe-scraper.git
@@ -29,8 +29,8 @@ This project is a web scraper for collecting recipes from the GialloZafferano we
     sh
 
     pip install -r requirements.txt
-
-Usage
+```
+ Usage
 
     Run the scraper:
 
@@ -83,8 +83,8 @@ if __name__ == "__main__":
 
 ## Issues
 
-Some images are not available and the script won't download them
-There are some recipes which have no ingredients, the script will only print a warning without saving anything
+- Some images are not available and the script won't download them
+- There are some recipes which have no ingredients, the script will only print a warning without saving anything
 
 ## Contributing
 
