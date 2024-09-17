@@ -5,7 +5,7 @@ This project is a web scraper for collecting recipes from the GialloZafferano we
 ## Features
 
 - Scrapes recipe information from the GialloZafferano website.
-- Downloads and saves images of the recipes in a folder.
+- Saves images as base64.
 - Formats the ingredients list.
 - Saves the collected data in a JSON file.
 
